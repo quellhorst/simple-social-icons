@@ -9,6 +9,8 @@ This plugin allows you to insert social icons in any widget area.
 
 == Description ==
 
+Modified to removed some serivces and add twitch and stream.
+Recreated fonts with: http://fontello.com/
 Simple Social Icons is an easy to use, customizable way to display icons that link visitors to your various social profiles. With it, you can easily choose which profiles to link to, customize the color and size of your icons, as well as align them to the left, center, or right, all from the widget form (no settings page necessary!).
 
 == Installation ==
