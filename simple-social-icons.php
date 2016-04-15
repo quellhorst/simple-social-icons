@@ -78,92 +78,66 @@ class Simple_Social_Icons_Widget extends WP_Widget {
 			'rss'                    => '',
 			'stumbleupon'            => '',
 			'tumblr'                 => '',
+			'twitch'                 => '',
 			'twitter'                => '',
+			'steam'                  => '',
 			'vimeo'                  => '',
 			'youtube'                => '',
+			'steam'                  => '',
+			'twitch'                 => '',
 		) );
 
 		/**
 		 * Social profile glyphs.
 		 */
 		$this->glyphs = apply_filters( 'simple_social_default_glyphs', array(
-			'bloglovin'		=> '&#xe80f;',
-			'dribbble'		=> '&#xe800;',
-			'email'			=> '&#xe80b;',
-			'facebook'		=> '&#xe802;',
-			'flickr'		=> '&#xe80a;',
-			'github'		=> '&#xe80c;',
-			'gplus'			=> '&#xe801;',
-			'instagram' 	=> '&#xe809;',
-			'linkedin'		=> '&#xe806;',
-			'pinterest'		=> '&#xe803;',
-			'rss'			=> '&#xe805;',
-			'stumbleupon'	=> '&#xe808;',
-			'tumblr'		=> '&#xe807;',
-			'twitter'		=> '&#xe80d;',
-			'vimeo'			=> '&#xe80e;',
-			'youtube'		=> '&#xe804;',
+			'email'			=> '&#xe80d;',
+			'twitter'		=> '&#xe80f;',
+			'tumblr'		=> '&#xe809;',
+			'steam'		=> '&#xe800;',
+			'twitch'			=> '&#xe801;',
+			'facebook'		=> '&#xe804;',
+			'instagram' 	=> '&#xe80b;',
+			'pinterest'		=> '&#xe805;',
+			'vimeo'			=> '&#xe810;',
+			'youtube'		=> '&#xe806;',
 		) );
 
 		/**
 		 * Social profile choices.
 		 */
 		$this->profiles = apply_filters( 'simple_social_default_profiles', array(
-			'bloglovin' => array(
-				'label'   => __( 'Bloglovin URI', 'ssiw' ),
-				'pattern' => '<li class="social-bloglovin"><a href="%s" %s>' . $this->glyphs['bloglovin'] . '</a></li>',
-			),
-			'dribbble' => array(
-				'label'   => __( 'Dribbble URI', 'ssiw' ),
-				'pattern' => '<li class="social-dribbble"><a href="%s" %s>' . $this->glyphs['dribbble'] . '</a></li>',
-			),
 			'email' => array(
 				'label'   => __( 'Email URI', 'ssiw' ),
 				'pattern' => '<li class="social-email"><a href="%s" %s>' . $this->glyphs['email'] . '</a></li>',
 			),
-			'facebook' => array(
-				'label'   => __( 'Facebook URI', 'ssiw' ),
-				'pattern' => '<li class="social-facebook"><a href="%s" %s>' . $this->glyphs['facebook'] . '</a></li>',
-			),
-			'flickr' => array(
-				'label'   => __( 'Flickr URI', 'ssiw' ),
-				'pattern' => '<li class="social-flickr"><a href="%s" %s>' . $this->glyphs['flickr'] . '</a></li>',
-			),
-			'github' => array(
-				'label'   => __( 'GitHub URI', 'ssiw' ),
-				'pattern' => '<li class="social-github"><a href="%s" %s>' . $this->glyphs['github'] . '</a></li>',
-			),
-			'gplus' => array(
-				'label'   => __( 'Google+ URI', 'ssiw' ),
-				'pattern' => '<li class="social-gplus"><a href="%s" %s>' . $this->glyphs['gplus'] . '</a></li>',
-			),
-			'instagram' => array(
-				'label'   => __( 'Instagram URI', 'ssiw' ),
-				'pattern' => '<li class="social-instagram"><a href="%s" %s>' . $this->glyphs['instagram'] . '</a></li>',
-			),
-			'linkedin' => array(
-				'label'   => __( 'Linkedin URI', 'ssiw' ),
-				'pattern' => '<li class="social-linkedin"><a href="%s" %s>' . $this->glyphs['linkedin'] . '</a></li>',
-			),
-			'pinterest' => array(
-				'label'   => __( 'Pinterest URI', 'ssiw' ),
-				'pattern' => '<li class="social-pinterest"><a href="%s" %s>' . $this->glyphs['pinterest'] . '</a></li>',
-			),
-			'rss' => array(
-				'label'   => __( 'RSS URI', 'ssiw' ),
-				'pattern' => '<li class="social-rss"><a href="%s" %s>' . $this->glyphs['rss'] . '</a></li>',
-			),
-			'stumbleupon' => array(
-				'label'   => __( 'StumbleUpon URI', 'ssiw' ),
-				'pattern' => '<li class="social-stumbleupon"><a href="%s" %s>' . $this->glyphs['stumbleupon'] . '</a></li>',
+			'twitter' => array(
+				'label'   => __( 'Twitter URI', 'ssiw' ),
+				'pattern' => '<li class="social-twitter"><a href="%s" %s>' . $this->glyphs['twitter'] . '</a></li>',
 			),
 			'tumblr' => array(
 				'label'   => __( 'Tumblr URI', 'ssiw' ),
 				'pattern' => '<li class="social-tumblr"><a href="%s" %s>' . $this->glyphs['tumblr'] . '</a></li>',
 			),
-			'twitter' => array(
-				'label'   => __( 'Twitter URI', 'ssiw' ),
-				'pattern' => '<li class="social-twitter"><a href="%s" %s>' . $this->glyphs['twitter'] . '</a></li>',
+			'steam' => array(
+				'label'   => __( 'Steam URI', 'ssiw' ),
+				'pattern' => '<li class="social-steam"><a href="%s" %s>' . $this->glyphs['steam'] . '</a></li>',
+			),
+			'twitch' => array(
+				'label'   => __( 'Twitch URI', 'ssiw' ),
+				'pattern' => '<li class="social-twitch"><a href="%s" %s>' . $this->glyphs['twitch'] . '</a></li>',
+			),
+			'facebook' => array(
+				'label'   => __( 'Facebook URI', 'ssiw' ),
+				'pattern' => '<li class="social-facebook"><a href="%s" %s>' . $this->glyphs['facebook'] . '</a></li>',
+			),
+			'instagram' => array(
+				'label'   => __( 'Instagram URI', 'ssiw' ),
+				'pattern' => '<li class="social-instagram"><a href="%s" %s>' . $this->glyphs['instagram'] . '</a></li>',
+			),
+			'pinterest' => array(
+				'label'   => __( 'Pinterest URI', 'ssiw' ),
+				'pattern' => '<li class="social-pinterest"><a href="%s" %s>' . $this->glyphs['pinterest'] . '</a></li>',
 			),
 			'vimeo' => array(
 				'label'   => __( 'Vimeo URI', 'ssiw' ),
@@ -197,7 +171,7 @@ class Simple_Social_Icons_Widget extends WP_Widget {
 		add_action( 'admin_footer-widgets.php', array( $this, 'print_scripts' ), 9999 );
 
 	}
-	
+
 	/**
 	 * Color Picker.
 	 *
@@ -211,7 +185,7 @@ class Simple_Social_Icons_Widget extends WP_Widget {
 			wp_enqueue_script( 'wp-color-picker' );
 			wp_enqueue_script( 'underscore' );
 	}
-		
+
 	/**
 	 * Print scripts.
 	 *
@@ -221,7 +195,7 @@ class Simple_Social_Icons_Widget extends WP_Widget {
 	function print_scripts() {
 		?>
 		<script>
-			( function( $ ){				
+			( function( $ ){
 				function initColorPicker( widget ) {
 					widget.find( '.ssiw-color-picker' ).wpColorPicker( {
 						change: function ( event ) {
